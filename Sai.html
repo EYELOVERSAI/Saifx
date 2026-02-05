@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>TradeFlow</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <main class="content-wrapper">
+        
+        <section class="hero-clock">
+            <div class="clock-display">
+                <h1 id="ist-time">--:--</h1>
+                <span class="seconds" id="ist-seconds">00</span>
+            </div>
+            <div class="date-display" id="date-display">--</div>
+        </section>
+
+        <section class="widget-wrapper">
+            <div class="session-pill" id="session-pill">
+                <span id="session-icon">🌅</span>
+                <div class="session-text">
+                    <span id="session-name">TOKYO SESSION</span>
+                    <span id="session-time" class="tiny-time">05:30 - 14:30</span>
+                </div>
+            </div>
+
+            <div class="prime-card">
+                <div class="card-header-row">
+                    <span class="prime-label">🔥 PRIME ASSET</span>
+                    <span class="live-indicator">● LIVE</span>
+                </div>
+
+                <div class="asset-main-row">
+                    <div class="asset-icon-box" id="prime-icon">
+                        <i class="fa-solid fa-yen-sign"></i>
+                    </div>
+                    <div class="asset-info">
+                        <h2 id="prime-pair">USD/JPY</h2>
+                        <p id="prime-strategy">Range Mean Reversion</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="list-container">
+            <div class="list-header">OTHER RECOMMENDED PAIRS</div>
+            <div class="pair-list" id="pair-list">
+                </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
